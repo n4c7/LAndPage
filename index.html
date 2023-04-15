@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work in Progress</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+      font-family: 'Times New Roman', serif;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .construction-animation {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://cdn.pixabay.com/photo/2013/07/13/10/01/construction-156939_960_720.png');
+      background-size: 200px;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: move 5s linear infinite;
+      opacity: 0.2;
+    }
+    @keyframes move {
+      0% { background-position: 0 0; }
+      100% { background-position: 200px 0; }
+    }
+    h1, p {
+      color: #FC690E;
+    }
+    .loader {
+      border: 4px solid #000;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="construction-animation"></div>
+    <img src="https://i.imgur.com/Ih0SJO1.png" alt="Logo" width="300" height="300">
+    <h1>COMING SOON!</h1>
+    <div class="loader"></div>
+    <p>Hang tight! We're hammerin' away at our masterpiece!</p>
+  </div>
+  <script>
+    // Add some spicy JavaScript if you like! 🌶️
+  </script>
+</body>
+</html>
